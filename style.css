@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+h1, ul {
+  color: azure;
+}
+
+input {
+  height: 25px;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  outline: none;
+  flex: 1;
+    margin-bottom: 30px;
+
+}
+
+button {
+  height: 25px;
+  width: 10%;
+  background: #ff5945;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  align-items: end;
+  cursor: pointer;
+  color: black;
+
+
+}
+
+
+
+ul li::before {
+  content: '';
+  background-image: url(images/unchecked.png);
+  background-position: center;
+  background-size: cover;
+  height:18px;
+  width: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+  background-position: center;
+  background-size: cover;
+  height:18px;
+  width: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#todo-list li  {
+  background: #fff;
+  width: 50%;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  border: none;
+  align-items: end;
+  text-align: start;
+}
+
+span {
+  margin-top: -8%;
+  margin-right: -17%;
+  padding-top: 9px;
+  margin-left: 90%;
+  
+  display: flex;
+  color: black;
+}
